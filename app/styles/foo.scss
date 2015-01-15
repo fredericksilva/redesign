@@ -1,0 +1,45 @@
+body{
+	-moz-gorilla:foo;
+	-webkit-gorilla: foo;	
+}
+
+article {
+
+	padding: 20px 0px 0px 0px;
+	color: blue;
+}
+
+div[role='contentinfo'] { background-color: blue; color: white; }
+
+@media screen and (max-width: 480px) { 
+	body{
+		background-color: #00f;
+	}
+}
+
+@media screen and (min-width: 480px) { 
+	body{
+		background-color: #00f;
+	}
+}
+
+/* #### Media Query Exemples */
+
+@media screen and (width: 200px) {
+  h1 { border-style: solid; }
+}
+
+@media screen and (width: 205px) {
+  h1 { border-style: dotted; }
+}
+
+@media screen and (width: 195px) {
+  h1 { border-style: dashed; }
+} 
+
+@media screen and (max-width: 480px) {
+	h1 { font-size: 2em; }
+}
+@media screen and (min-width: 481px) {
+	h1 { font-size: 3.6em;}
+}
